@@ -42,7 +42,7 @@ btn.addEventListener("click", (e) => {
     tag.classList.toggle("tagNone");
     btnText.textContent = "LESS";
     icon.style.transform = "rotate(180deg)";
-    main.style.paddingTop = '15rem'
+    main.style.paddingTop = '10rem'
   } else {
     header.classList.toggle("tagNone");
     tag.classList.toggle("tagNone");
