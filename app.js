@@ -57,6 +57,9 @@ setInterval(() => {
     sana.getMinutes() < 10 ? "0" + sana.getMinutes() : sana.getMinutes();
   time.textContent = `${hours} : ${minute}`;
 }, 1000);
+
+
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   t++;
@@ -65,7 +68,7 @@ btn.addEventListener("click", (e) => {
     tag.classList.toggle("tagNone");
     btnText.textContent = "LESS";
     icon.style.transform = "rotate(180deg)";
-    main.style.paddingTop = '10rem'
+    main.style.paddingTop = '5.6rem'
   } else {
     header.classList.toggle("tagNone");
     tag.classList.toggle("tagNone");
