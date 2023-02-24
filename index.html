@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock-app</title>
+    <!-- LINK STYLE -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <p id="long-text" class="long-text">
+            “The science of operations, as derived from mathematics more
+            especially, is a science of itself, and has its own abstract truth
+            and value.”
+          </p>
+          <img
+            id="sinxron"
+            class="sinx"
+            src="./images/svg/Combined Shape.svg"
+            alt="icon"
+            width="
+            16.67px"
+            height="
+            16.67px"
+          />
+        </div>
+        <div id="after" class="after">Ada Lovelace</div>
+      </header>
+      <main class="main">
+        <div class="main-top">
+          <img class="kunIcon" src="./images/svg/sun.svg" alt="sun.svg" width="22.34" height="24" />
+          <h3 class="salom">GOOD MORNING, IT’S CURRENTLY</h3>
+        </div>
+        <div class="main-bottom">
+          <img class="kunIcon" src="./images/svg/oy.svg" alt="sun.svg" width="22.34" height="24" />
+          <h3 class="salom">GOOD EVENING, IT’S CURRENTLY</h3>
+        </div>
+        <div class="main-clock">
+          <h1 class="time">23:14</h1>
+          <h4 class="bst">BST</h4>
+        </div>
+        <footer class="footer">
+          <h2 class="country">IN TASHKENT, UZ</h2>
+          <div class="btn">
+            <button id="btn">
+              <h3 id="btnText">MORE</h3>
+              <img
+              id="icon"
+                src="./images/svg/Group 3.svg"
+                alt=""
+                width="40"
+                height="40"
+              />
+            </button>
+          </div>
+        </footer>
+      </main>
+
+      <div class="tag tagNone">
+        <div class="tag__item">
+          <p class="tag--p">CURRENT TIMEZONE</p>
+          <h1 id="country" class="tag-h1 hh1">Europe/London</h1>
+          <p class="tag--p">Day of the year</p>
+          <h1 id="fullDay" class="tag-h1">295</h1>
+        </div>
+        <span class="height-hr"></span>
+        <div class="tag__item">
+          <p class="tag--p">Day of the week</p>
+          <h1 id="dayWeek" class="tag-h1 hh1">5</h1>
+          <p class="tag--p">Week number</p>
+          <h1 id="fullWeek" class="tag-h1">42</h1>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
