@@ -25,8 +25,31 @@ let day = g.getDate();
 let t = false;
 
 // END
-// let sana = 0;
-// let hours = 0;
+
+
+
+// DARKNOT
+let soat = g.getHours();
+
+console.log(soat);
+
+function darkNot() {
+  if (soat > 7 && soat < 17) {
+    wrapper.style.backgroundImage = "url('./images/jpg/lightFon.jpg')";
+    kun.style.display = "flex";
+    oy.style.display = "none";
+    tag.style.background = 'white'
+    tag.style.color = 'black'
+  } else {
+    wrapper.style.backgroundImage = "url('./images/png/fon.png')";
+    kun.style.display = "none";
+    oy.style.display = "flex";
+    tag.style.background = 'black'
+  }
+}
+darkNot();
+
+
 setInterval(() => {
   let sana = new Date();
   let hours = sana.getHours() < 10 ? "0" + sana.getHours() : sana.getHours();
@@ -51,27 +74,8 @@ btn.addEventListener("click", (e) => {
     t = false;
   }
 });
-let soat = g.getHours();
 
 
-// DARKNOT
-console.log(soat);
-
-function darkNot() {
-  if (soat > 7 && soat < 17) {
-    wrapper.style.backgroundImage = "url('/images/jpg/lightFon.jpg')";
-    kun.style.display = "flex";
-    oy.style.display = "none";
-    tag.style.background = 'white'
-    tag.style.color = 'black'
-  } else {
-    wrapper.style.backgroundImage = "url('/images/png/fon.png')";
-    kun.style.display = "none";
-    oy.style.display = "flex";
-    tag.style.background = 'black'
-  }
-}
-darkNot();
 // FULL MONTH
 let fullDay = 0;
 function fullDayFunc() {
