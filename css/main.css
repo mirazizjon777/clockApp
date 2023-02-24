@@ -224,6 +224,7 @@ button {
     padding-right: 6rem;
     height: 440px;
     top: 60%;
+    display: none;
   }
   .tag-h1 {
     font-weight: 700;
@@ -264,6 +265,7 @@ button {
     padding: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    display: none;
   }
   .tag__item {
     display: grid;
